@@ -3,5 +3,5 @@ div.circle-loader{
     width: 40px;
     border: 2px solid darkblue;
     border-bottom: 2px solid transparent;
-    
+    border-radius: 50%;
 }
