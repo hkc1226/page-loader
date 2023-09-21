@@ -4,11 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel='stylesheet' href='/style.css'>
+<style>
+    .three-quarter-spinner {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear 0s infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+</style>
 </head>
 <body>
     <h1>Page_Loader_1</h1>
-    <div class="spinner-box">7
+    <div class="spinner-box">
         <div class="three-quarter-spinner">
         </div>
     </div>
