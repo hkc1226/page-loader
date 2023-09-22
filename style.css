@@ -1,79 +1,33 @@
+/* KEYFRAMES */
 
-        /* KEYFRAMES */
-        
-        @keyframes spin {
-            from {
-                transform: rotate(0);
-            }
-            to {
-                transform: rotate(359deg);
-            }
-        }
-        
-        @keyframes spin3D {
-            from {
-                transform: rotate3d(.5, .5, .5, 360deg);
-            }
-            to {
-                transform: rotate3d(0deg);
-            }
-        }
-        
-        @keyframes pulse {
-            from {
-                opacity: 1;
-                transform: scale(1);
-            }
-            to {
-                opacity: .25;
-                transform: scale(.75);
-            }
-        }
-        /* GRID STYLING */
-        
-        * {
-            box-sizing: border-box;
-        }
-        
-        body {
-            min-height: 100vh;
-            background-color: #1d2630;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            align-items: flex-start;
-        }
-        
-        
-        /* SPINNING CIRCLE */
-        
-        .spinner-box {
-            width: 300px;
-            height: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: transparent;
-        }
+@keyframes spin {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
+/* GRID STYLING */
 
-        
-        
-        
-        
-        .three-quarter-spinner .sun {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background-color: #eeff02;
-            filter: blur(0px);
-        }
-        
-        .three-quarter-spinner {
-            width: 40px;
-            height: 40px;
-            border: 2px solid #fff;
-            border-top: 3px solid transparent;
-            border-radius: 50%;
-            animation: spin 1s linear 0s infinite;
-        }
-    
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	background-color: #1d2630;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.three-quarter-spinner {
+	width: 40px;
+	height: 40px;
+	border: 2px solid #fff;
+	border-top: 3px solid transparent;
+	border-radius: 50%;
+	animation: spin 1s linear 0s infinite;
+}
